@@ -110,7 +110,7 @@ module gregs_x_carriage(with_fanmount=true)
 			fan_mount();
             translate([0,0,lm8uu_support_thickness/2])
             minkowski(){
-            cube([70,80,lm8uu_support_thickness],center=true);
+            cube([70,85,lm8uu_support_thickness],center=true);
                 cylinder(d=5,h=0.001);
             }
                         translate([0,-26.5,1*lm8uu_support_thickness-1])
@@ -162,9 +162,8 @@ color([0,0,1])
 			rotate(90*(i+1)+180) 
 			belt_clamp_socket ();
             
-            
             for(i=[-1,1])
-    translate([0,35*i,lm8uu_support_thickness*2])
+    translate([0,37*i,lm8uu_support_thickness*2])
      minkowski(){
             cube([28,10,lm8uu_support_thickness*2],center=true);
                 cylinder(d=5,h=0.001);
@@ -173,7 +172,7 @@ color([0,0,1])
                     for(i=[-1,1])
 
                     for(j=[-1,1])
-                translate([13*j,35*i,-0.01]){
+                translate([13*j,37*i,-0.01]){
                 cylinder(d=3.2,h=20,center=true);
                 cylinder(d=6.5,h=4);
                     

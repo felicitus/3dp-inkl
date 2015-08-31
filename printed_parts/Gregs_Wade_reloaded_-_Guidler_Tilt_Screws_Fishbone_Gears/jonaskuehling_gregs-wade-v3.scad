@@ -445,7 +445,7 @@ module block_holes(legacy_mount=false){
 			}
 */
 			// Mounting holes on the base.
-			translate(legacy_mount?[-3.4,0,-1]:[0,0,0])
+			translate(legacy_mount?[-3.4,0,-1]:[4,0,0])
 			for (mount=[0:1]){
 				translate([-filament_feed_hole_offset+25*((mount<1)?1:-1),
 					-motor_mount_translation[1]-1,wade_block_depth/2])
